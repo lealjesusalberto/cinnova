@@ -1,0 +1,66 @@
+.about {
+  background: var(--secondary-blue);
+  position: relative;
+}
+
+.history-section {
+  margin-bottom: 6rem;
+}
+
+.history-content {
+  border-left: 4px solid var(--accent-gold);
+}
+
+.history-quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  position: relative;
+}
+
+.history-quote::before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--accent-gold);
+  opacity: 0.3;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-family: serif;
+}
+
+.history-text {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.history-text.highlight {
+  color: var(--text-main);
+  margin-top: 2rem;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.mv-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.mv-card p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}

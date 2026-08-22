@@ -1,0 +1,75 @@
+.values {
+  background: var(--bg-gradient);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.value-card {
+  text-align: center;
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.value-title {
+  color: var(--accent-gold);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.objectives-section {
+  margin-top: 4rem;
+}
+
+.objectives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.objective-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.obj-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(212, 175, 55, 0.2);
+  -webkit-text-stroke: 1px var(--accent-gold);
+}
+
+.objective-item h5 {
+  color: var(--text-main);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.objective-item p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .objective-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
