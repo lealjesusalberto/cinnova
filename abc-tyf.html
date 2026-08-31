@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ABC TyF - Tributos y Finanzas. Entrenamiento práctico y sin rodeos en la realidad fiscal de Venezuela.">
+    <title>ABC TyF | Tributos y Finanzas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para ABC TyF */
+        .tyf-hero {
+            background: linear-gradient(135deg, rgba(4, 47, 46, 0.95) 0%, rgba(15, 118, 110, 0.8) 100%), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            min-height: 50vh;
+        }
+        .tyf-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-top: 4px solid var(--accent-teal);
+            height: 100%;
+        }
+        .modulo-card {
+            background: var(--surface-light);
+            border-left: 4px solid var(--accent-teal);
+            padding: 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+        .modulo-card h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .modulo-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .modulo-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .modulo-list li::before {
+            content: '\f105';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--accent-gold);
+            position: absolute;
+            left: 0;
+        }
+        .test-box {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 2rem;
+            border-radius: 15px;
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+        .question {
+            margin-bottom: 1.5rem;
+            background: rgba(255,255,255,0.05);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .options {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+        .options li {
+            margin-bottom: 0.3rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .options li::before {
+            content: '\f111';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 400;
+            position: absolute;
+            left: 0;
+            color: var(--accent-teal);
+            font-size: 0.8rem;
+            top: 5px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            color: var(--accent-gold);
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">C-INNOVA <span>CCS</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html#unidades">Volver a Unidades</a>
+                <a href="#temario">Temario</a>
+                <a href="#admision" class="btn-primary-outline">Admisión</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero tyf-hero">
+        <div class="container hero-content" style="padding-top: 80px;">
+            <a href="index.html#unidades" class="back-link"><i class="fas fa-arrow-left"></i> Volver a C-INNOVA</a>
+            <h1 class="fade-in-up">ABC TyF</h1>
+            <p class="fade-in-up delay-1">Tributos y Finanzas. Aprende la fiscalidad real de Venezuela sin rodeos.</p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#temario" class="btn-primary" style="background: var(--accent-teal);">Ver Programa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta y Perfil -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="slide-in-left">
+                    <h2 class="text-gradient">Propuesta de Valor</h2>
+                    <p class="mb-4">Conecta la teoría académica con el ejercicio práctico desde el primer día. Dominarás las herramientas, declaraciones y criterios tributarios clave para ejecutar con total seguridad técnico-operativa, evitar sanciones costosas y destacar de inmediato en el mercado laboral.</p>
+                    
+                    <h3 class="mt-4 text-gradient">¿A quién va dirigido?</h3>
+                    <ul class="modulo-list mt-3">
+                        <li><strong>Estudiantes y Recién Graduados:</strong> Para perder el miedo al ejercicio real.</li>
+                        <li><strong>Junior en Contabilidad:</strong> Para dominar procesos operativos clave y ascender.</li>
+                        <li><strong>Consultores Principiantes:</strong> Seguridad técnica para llevar la contabilidad de clientes.</li>
+                        <li><strong>Emprendedores:</strong> Para entender la realidad fiscal y prevenir sanciones.</li>
+                        <li><strong>Profesionales en Actualización:</strong> Ponerse al día con providencias recientes.</li>
+                    </ul>
+                </div>
+                
+                <div class="slide-in-right">
+                    <div class="tyf-card" style="background: var(--bg-dark); color: white;">
+                        <h3 class="text-gradient mb-3">Perfil de Egreso</h3>
+                        <p class="mb-3 text-secondary-dark">Al finalizar, estarás capacitado para:</p>
+                        <ul class="modulo-list" style="color: white;">
+                            <li><strong>Ejecutar Procedimientos Clave:</strong> Libros de compras/ventas, retenciones de IVA/ISLR, IGTF.</li>
+                            <li><strong>Manejar Portales:</strong> Dominar la operatividad en el SENIAT y plataformas de alcaldías.</li>
+                            <li><strong>Mitigar Riesgos:</strong> Interpretar el marco legal para identificar contingencias y prevenir multas.</li>
+                            <li><strong>Integrar Contabilidad:</strong> Vincular registro diario con liquidación impositiva.</li>
+                            <li><strong>Generar Valor Inmediato:</strong> Desempeño solvente desde el primer día.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores -->
+    <section class="section bg-dark text-white">
+        <div class="container">
+            <div class="grid-2">
+                <div class="mv-box slide-in-left">
+                    <h3 class="text-gradient" style="background: linear-gradient(135deg, var(--accent-teal), var(--accent-gold)); -webkit-background-clip: text;">Misión</h3>
+                    <p>Conectar la teoría académica con la realidad fiscal de Venezuela mediante un entrenamiento práctico y sin rodeos, equipando a los nuevos profesionales con el conocimiento tributario exacto que necesitan para destacar desde su primer día.</p>
+                </div>
+                <div class="mv-box slide-in-right">
+                    <h3 class="text-gradient" style="background: linear-gradient(135deg, var(--accent-teal), var(--accent-gold)); -webkit-background-clip: text;">Visión</h3>
+                    <p>Ser la plataforma y comunidad de referencia para la educación financiera y fiscal de la nueva generación en Venezuela, empoderándolos para lograr independencia económica y estabilidad legal al iniciar en el mundo laboral.</p>
+                </div>
+            </div>
+
+            <div class="grid-2 mt-4 fade-in-up delay-1">
+                <div>
+                    <h3 class="mb-3 mt-4" style="color: var(--accent-teal);">Valores Corporativos</h3>
+                    <ul class="modulo-list" style="color: var(--text-primary-dark);">
+                        <li><strong>Claridad:</strong> Adiós al tecnicismo innecesario.</li>
+                        <li><strong>Rigor Técnico y Legal:</strong> Basado en el marco legal vigente (COT, Providencias).</li>
+                        <li><strong>Enfoque Práctico:</strong> Aprender haciendo con casos reales.</li>
+                        <li><strong>Empatía y Cercanía:</strong> Acompañamiento paciente ante el vértigo de los inicios.</li>
+                        <li><strong>Actualización Constante:</strong> Un paso adelante ante cambios normativos.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-3 mt-4" style="color: var(--accent-teal);">Valores Estratégicos</h3>
+                    <ul class="modulo-list" style="color: var(--text-primary-dark);">
+                        <li><strong>Cerrar la Brecha Académico-Práctica.</strong></li>
+                        <li><strong>Dominio Operativo del Compliance Fiscal Venezolano.</strong></li>
+                        <li><strong>Inserción y Aceleración Profesional Inmediata.</strong></li>
+                        <li><strong>Desarrollo de Criterio Técnico y Evaluación de Riesgo.</strong></li>
+                        <li><strong>Modernización y Gestión Eficiente de Procesos.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temario -->
+    <section id="temario" class="section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Programa Práctico de Fiscalidad Venezolana</h2>
+                <p>Estructura del Temario</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="modulo-card fade-in-up delay-1">
+                    <h4>Módulo 1: Fundamentos y Entorno Operativo</h4>
+                    <ul class="modulo-list">
+                        <li>El sistema tributario venezolano: Jerarquía legal y COT.</li>
+                        <li>Deberes formales y materiales del contribuyente.</li>
+                        <li>Tipos de contribuyentes: Ordinarios, Especiales y Exentos.</li>
+                        <li>Lectura analítica de Providencias y Gacetas Oficiales.</li>
+                    </ul>
+                </div>
+                
+                <div class="modulo-card fade-in-up delay-2">
+                    <h4>Módulo 2: IVA y Mecanismo de Retenciones</h4>
+                    <ul class="modulo-list">
+                        <li>Determinación del débito y crédito fiscal.</li>
+                        <li>Elaboración y registro de Libros de Compras y Ventas.</li>
+                        <li>Régimen de Retenciones (Prov. 0049): Cálculo y enteramiento.</li>
+                        <li>Declaración práctica del IVA en el portal fiscal.</li>
+                    </ul>
+                </div>
+
+                <div class="modulo-card fade-in-up delay-3">
+                    <h4>Módulo 3: ISLR Operativo y Retenciones</h4>
+                    <ul class="modulo-list">
+                        <li>Territorialidad, disponibilidad y deducciones.</li>
+                        <li>Retenciones de ISLR (Decreto 1808): Porcentajes y momentos.</li>
+                        <li>Comprobante AR-IV y declaración mensual de retenciones.</li>
+                        <li>Introducción a la Declaración Definitiva (DPJ).</li>
+                    </ul>
+                </div>
+
+                <div class="modulo-card fade-in-up delay-4">
+                    <h4>Módulo 4: IGTF y Tributación Municipal</h4>
+                    <ul class="modulo-list">
+                        <li>IGTF: Operativa para Sujetos Pasivos Especiales.</li>
+                        <li>Registro contable y declaración de retenciones IGTF.</li>
+                        <li>Tributación Municipal (ISAE) y licencias.</li>
+                        <li>Uso de portales de alcaldías locales.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="modulo-card fade-in-up delay-4 mt-3" style="max-width: 800px; margin-left:auto; margin-right:auto; border-left-color: var(--accent-gold);">
+                <h4 style="color: var(--accent-gold);">Módulo 5: Simulación Práctica (Laboratorio Fiscal)</h4>
+                <ul class="modulo-list">
+                    <li>Caso integral: Soportes físicos a registros contables.</li>
+                    <li>Conciliación entre estados financieros y declaraciones.</li>
+                    <li>Simulación de fiscalización: Preparación de carpetas de auditoría.</li>
+                    <li>Taller de redacción de respuestas administrativas.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admisión y Test -->
+    <section id="admision" class="section bg-dark text-white">
+        <div class="container">
+            <div class="grid-2">
+                <div class="slide-in-left">
+                    <h2 class="text-gradient" style="background: linear-gradient(135deg, var(--accent-teal), var(--accent-gold)); -webkit-background-clip: text;">Cómo Acceder al Programa</h2>
+                    
+                    <div class="mt-4">
+                        <h4 style="color: var(--accent-teal);">Paso 1: Selección de Perfil e Inscripción</h4>
+                        <p class="text-secondary-dark">Define tu perfil: Nuevo Profesional, Consultor o Empresario.</p>
+                        
+                        <h4 class="mt-3" style="color: var(--accent-teal);">Paso 2: Canales Directos de Registro</h4>
+                        <ul class="modulo-list">
+                            <li><strong>Sitio Web:</strong> Completa el formulario de registro.</li>
+                            <li><strong>WhatsApp / DM:</strong> Envía "REGISTRO" indicando tu perfil.</li>
+                            <li><strong>Atención Personalizada:</strong> Llamada de orientación de 10 min.</li>
+                        </ul>
+
+                        <h4 class="mt-3" style="color: var(--accent-teal);">Paso 3: Diagnóstico y Acceso</h4>
+                        <p class="text-secondary-dark">Al registrarte, realizarás nuestra Prueba de Diagnóstico para recibir acceso inmediato al Material de Bienvenida (Plantillas base en Excel y PDFs normativos).</p>
+                    </div>
+                </div>
+                
+                <div class="slide-in-right">
+                    <div class="test-box">
+                        <h3 class="mb-3 text-center" style="color: var(--accent-gold);">Prueba de Diagnóstico Inicial</h3>
+                        <p class="text-center mb-4" style="font-size: 0.9rem;">Mide tu nivel técnico-operativo. Responde mentalmente las siguientes preguntas de muestra:</p>
+                        
+                        <div class="question">
+                            <p><strong>1.</strong> ¿Cuál es el porcentaje de retención de IVA aplicable por regla general a un contribuyente ordinario según Prov. 0049?</p>
+                            <ul class="options">
+                                <li>A) 50%</li>
+                                <li>B) 75%</li>
+                                <li>C) 100%</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="question">
+                            <p><strong>2.</strong> Según Decreto 1808, ¿cuál es el porcentaje de retención de ISLR para una Persona Jurídica domiciliada por servicios generales?</p>
+                            <ul class="options">
+                                <li>A) 1%</li>
+                                <li>B) 2%</li>
+                                <li>C) 5%</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <p class="mb-2" style="color: var(--accent-teal); font-size: 0.9rem;">Interpreta tus resultados tras realizar el test completo:</p>
+                            <span class="badge" style="background: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Básico (0-3)</span>
+                            <span class="badge" style="background: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; margin: 0 5px;">Intermedio (4-5)</span>
+                            <span class="badge" style="background: #10b981; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Avanzado (6-7)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 fade-in-up delay-2">
+                <a href="index.html#contacto" class="btn-primary" style="background: var(--accent-gold); color: var(--bg-dark);">Comenzar mi Registro</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom" style="border:none; padding-top:0;">
+            <p>&copy; 2024 C-INNOVA CCS | ABC TyF. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

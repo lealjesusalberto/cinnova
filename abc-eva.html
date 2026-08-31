@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ABC EVA - Entorno Virtual de Aprendizaje. Alquiler de infraestructura educativa digital robusta, accesible y flexible.">
+    <title>ABC EVA | Entorno Virtual de Aprendizaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para la página de EVA */
+        .eva-hero {
+            background: linear-gradient(135deg, rgba(13, 17, 28, 0.95) 0%, rgba(109, 40, 217, 0.8) 100%), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            min-height: 50vh;
+        }
+        .eva-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-top: 4px solid var(--accent-purple);
+        }
+        .eva-icon {
+            color: var(--accent-purple);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .recaudos-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .recaudos-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        .recaudos-list li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--accent-teal);
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            color: var(--accent-gold);
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">C-INNOVA <span>CCS</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html#unidades">Volver a Unidades</a>
+                <a href="#propuesta">Propuesta</a>
+                <a href="#recaudos" class="btn-primary-outline">Requisitos de Alquiler</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero eva-hero">
+        <div class="container hero-content" style="padding-top: 80px;">
+            <a href="index.html#unidades" class="back-link"><i class="fas fa-arrow-left"></i> Volver a C-INNOVA</a>
+            <h1 class="fade-in-up">ABC EVA</h1>
+            <p class="fade-in-up delay-1">Entorno Virtual de Aprendizaje. Tu infraestructura educativa digital llave en mano.</p>
+        </div>
+    </section>
+
+    <!-- Propuesta y Pilares -->
+    <section id="propuesta" class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="slide-in-left">
+                    <h2 class="text-gradient">Nuestra Propuesta de Valor</h2>
+                    <p class="mb-4">Ofrecemos un Entorno Virtual de Aprendizaje (EVA) llave o enlace de acceso que elimina por completo la complejidad técnica de gestionar un aula virtual propia. Permitimos a instituciones, empresas y educadores independientes alquilar una infraestructura digital de alta disponibilidad, segura y personalizable para alojar sus cursos, plantillas y sesiones sin inversión en desarrollo ni mantenimiento informático.</p>
+                    
+                    <h3 class="mt-4">¿A quién va dirigido?</h3>
+                    <ul class="recaudos-list mt-3">
+                        <li><strong>Instituciones Educativas y Academias:</strong> Externaliza tu infraestructura sin costos de desarrollo.</li>
+                        <li><strong>Empresas y RR.HH.:</strong> Entorno seguro para capacitación continua y onboarding.</li>
+                        <li><strong>Consultores y Capacitadores:</strong> Aula virtual lista para usar con soporte técnico.</li>
+                        <li><strong>Agencias de Formación y EdTechs:</strong> Alojamiento bajo un esquema de alquiler escalable.</li>
+                    </ul>
+                </div>
+                
+                <div class="slide-in-right">
+                    <div class="grid-2">
+                        <div class="eva-card">
+                            <i class="fas fa-wrench eva-icon"></i>
+                            <h4>Cero Carga Técnica</h4>
+                            <p class="text-secondary-light">Plataforma configurada, incluyendo mantenimiento, actualizaciones y soporte continuo.</p>
+                        </div>
+                        <div class="eva-card">
+                            <i class="fas fa-chart-line eva-icon"></i>
+                            <h4>Flexibilidad y Escalabilidad</h4>
+                            <p class="text-secondary-light">Infraestructura que crece con tus necesidades, desde talleres hasta programas masivos.</p>
+                        </div>
+                        <div class="eva-card">
+                            <i class="fas fa-shield-alt eva-icon"></i>
+                            <h4>Seguridad</h4>
+                            <p class="text-secondary-light">Entornos protegidos para el resguardo de contenidos y datos bajo altos estándares.</p>
+                        </div>
+                        <div class="eva-card">
+                            <i class="fas fa-piggy-bank eva-icon"></i>
+                            <h4>Eficiencia de Costos</h4>
+                            <p class="text-secondary-light">Alquiler accesible que transforma grandes inversiones en un costo operativo predecible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores -->
+    <section class="section bg-dark text-white">
+        <div class="container">
+            <div class="grid-2">
+                <div class="mv-box slide-in-left">
+                    <h3 class="text-gradient">Misión</h3>
+                    <p>Proveer una infraestructura educativa digital robusta, accesible y flexible que permita a instituciones, docentes y creadores de contenido alquilar un Entorno Virtual de Aprendizaje (EVA), llave o enlace de acceso, facilitando la gestión e impartición de sus cursos sin preocuparse por la gestión técnica.</p>
+                </div>
+                <div class="mv-box slide-in-right">
+                    <h3 class="text-gradient">Visión</h3>
+                    <p>Ser la plataforma de alquiler de aulas virtuales preferida en el mercado educativo y corporativo, destacándose por la confiabilidad de su entorno, la escalabilidad de sus soluciones y la excelencia en el soporte tecnológico para el aprendizaje en línea.</p>
+                </div>
+            </div>
+
+            <div class="grid-2 mt-4 fade-in-up delay-1">
+                <div>
+                    <h3 class="text-gradient mb-3 mt-4">Valores Corporativos</h3>
+                    <ul class="recaudos-list" style="color: var(--text-primary-dark);">
+                        <li><strong>Excelencia Operativa:</strong> Máxima disponibilidad y rendimiento.</li>
+                        <li><strong>Orientación al Cliente:</strong> Atención ágil y resolución eficiente.</li>
+                        <li><strong>Transparencia y Seguridad:</strong> Confidencialidad y privacidad de datos.</li>
+                        <li><strong>Adaptabilidad:</strong> Soluciones dinámicas que evolucionan con el mercado.</li>
+                        <li><strong>Integridad Profesional:</strong> Ética y responsabilidad comercial.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-gradient mb-3 mt-4">Valores Estratégicos</h3>
+                    <ul class="recaudos-list" style="color: var(--text-primary-dark);">
+                        <li><strong>Liderazgo Tecnológico:</strong> Referente de fiabilidad EdTech.</li>
+                        <li><strong>Escalabilidad:</strong> Arquitectura digital flexible y eficiente en costos.</li>
+                        <li><strong>Customer Value:</strong> Entornos intuitivos y minimización de fricciones.</li>
+                        <li><strong>Sostenibilidad:</strong> Modelo de negocio rentable a través de alianzas.</li>
+                        <li><strong>Gobernanza:</strong> Estrictos estándares de ciberseguridad.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recaudos -->
+    <section id="recaudos" class="section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Requisitos para el Alquiler</h2>
+                <p>Para formalizar el contrato de alquiler y autorizar el acceso, se solicitan los siguientes recaudos legales y operativos:</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="eva-card fade-in-up delay-1">
+                    <h4 class="mb-3 text-gradient">1. Datos Legales e Identificación</h4>
+                    <p><strong>Personas Jurídicas:</strong></p>
+                    <ul class="recaudos-list mb-3">
+                        <li>Copia del Registro Mercantil o acta constitutiva.</li>
+                        <li>Copia del RIF o identificación tributaria.</li>
+                        <li>Documento de identidad del representante legal.</li>
+                    </ul>
+                    <p><strong>Personas Naturales:</strong></p>
+                    <ul class="recaudos-list">
+                        <li>Documento de identidad y RIF actualizado.</li>
+                        <li>Comprobante de domicilio reciente.</li>
+                    </ul>
+                </div>
+
+                <div class="eva-card fade-in-up delay-2">
+                    <h4 class="mb-3 text-gradient">2. Especificaciones del Servicio</h4>
+                    <ul class="recaudos-list">
+                        <li><strong>Proyección de Usuarios:</strong> Cantidad estimada de estudiantes y docentes.</li>
+                        <li><strong>Duración del Alquiler:</strong> Fechas de inicio y culminación.</li>
+                        <li><strong>Almacenamiento:</strong> Estimación de material a alojar (PDFs, videos).</li>
+                        <li><strong>Formatos de Sesión:</strong> Integraciones requeridas (Zoom, Meet) o solo asincrónico.</li>
+                    </ul>
+                </div>
+
+                <div class="eva-card fade-in-up delay-3">
+                    <h4 class="mb-3 text-gradient">3. Datos del Administrador</h4>
+                    <p>Designación de un <strong>Super User</strong> (persona a quien se entregarán las credenciales):</p>
+                    <ul class="recaudos-list mt-2">
+                        <li>Nombre completo.</li>
+                        <li>Correo electrónico corporativo.</li>
+                        <li>Teléfono de contacto directo.</li>
+                    </ul>
+                </div>
+
+                <div class="eva-card fade-in-up delay-4">
+                    <h4 class="mb-3 text-gradient">4. Validación Comercial</h4>
+                    <ul class="recaudos-list">
+                        <li><strong>Comprobante de Pago:</strong> Abono del canon de alquiler según condiciones.</li>
+                        <li><strong>Contrato Aceptado:</strong> Firma de Políticas de Uso Aceptable (PUA), confidencialidad y límites de capacidad.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4 fade-in-up delay-4">
+                <a href="index.html#contacto" class="btn-primary">Solicitar Cotización</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom" style="border:none; padding-top:0;">
+            <p>&copy; 2024 C-INNOVA CCS | ABC EVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

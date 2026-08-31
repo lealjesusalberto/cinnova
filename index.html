@@ -1,13 +1,253 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>abc-empre</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="C-INNOVA CCS - Firma Consultora y Aliado Estratégico en Venezuela. Soluciones especializadas administrativas, contables, gerenciales y laborales.">
+    <title>C-INNOVA CCS | Consultoría y Gestión Corporativa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#hero">C-INNOVA <span>CCS</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#propuesta">Propuesta</a>
+                <a href="#unidades">Unidades de Negocio</a>
+                <a href="#contacto" class="btn-primary-outline">Contacto</a>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">Aliados estratégicos en la optimización y protección integral de tu negocio</h1>
+            <p class="fade-in-up delay-1">Brindamos soluciones especializadas en áreas clave: administrativa, contable, gerencial y laboral en Venezuela.</p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#unidades" class="btn-primary">Descubre Nuestras Soluciones</a>
+                <a href="#nosotros" class="btn-secondary">Conócenos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="section">
+        <div class="container nosotros-container">
+            <div class="nosotros-text slide-in-left">
+                <h2>¿Quiénes Somos?</h2>
+                <p>En C-INNOVA CCS somos una firma especializada en servicios administrativos, comerciales, contables y tributarios. Nacimos en 2023 con el propósito de impulsar el crecimiento de nuestros clientes mediante la evaluación, análisis e implementación de programas y sistemas integrados de gestión.</p>
+                <p>Destacamos por un enfoque proactivo: identificamos y anticipamos los desafíos de tu empresa para ofrecer soluciones estratégicas, oportunas y de alto impacto que protegen y fortalecen su patrimonio.</p>
+            </div>
+            <div class="nosotros-historia slide-in-right">
+                <div class="historia-card glass-panel">
+                    <i class="fas fa-lightbulb icon-accent"></i>
+                    <h3>El sueño de ABC EMPRE</h3>
+                    <p class="italic-text">"Después de más de 20 años trabajando codo a codo con empresas... descubrí un patrón doloroso: muchos negocios con ideas brillantes terminaban en pérdidas... ¿La razón? El desconocimiento de las finanzas y el miedo a los impuestos."</p>
+                    <p>Nacimos para recordarte que no tienes que pasar por este camino a ciegas. Existimos para ayudarte a descubrir esa fuerza interior y convertirla en la palanca que impulse tu emprendimiento hasta transformarlo en una empresa sólida, exitosa y real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor & Por qué C-INNOVA -->
+    <section id="propuesta" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>¿Por qué elegir C-INNOVA CCS?</h2>
+                <p>Transformamos la complejidad operativa en ventajas competitivas y rentabilidad.</p>
+            </div>
+            
+            <div class="grid-4 propuesta-grid">
+                <div class="feature-card fade-in-up delay-1">
+                    <i class="fas fa-microchip icon-large"></i>
+                    <h3>Tecnología y Talento</h3>
+                    <p>Combinamos herramientas tecnológicas avanzadas con un equipo humano de amplia trayectoria.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-2">
+                    <i class="fas fa-bullseye icon-large"></i>
+                    <h3>Enfoque en tu Core Business</h3>
+                    <p>Asumimos la gestión de tus procesos operativos para que puedas concentrarte en el núcleo de tu negocio.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-3">
+                    <i class="fas fa-chart-line icon-large"></i>
+                    <h3>Estrategia y Eficiencia</h3>
+                    <p>Diseñamos soluciones oportunas de alto impacto, garantizando el cumplimiento legal, fiscal y contable.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-4">
+                    <i class="fas fa-server icon-large"></i>
+                    <h3>Infraestructura de Vanguardia</h3>
+                    <p>Contamos con tecnología de punta y especialistas listos para respaldar tus operaciones con seguridad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión, Valores y Objetivos -->
+    <section id="identidad" class="section bg-dark text-white">
+        <div class="container">
+            <div class="grid-2 identidad-grid">
+                <div class="mision-vision slide-in-left">
+                    <div class="mv-box">
+                        <h3 class="text-gradient">Misión</h3>
+                        <p>Transformar y optimizar la gestión administrativa, contable y fiscal de las empresas venezolanas mediante tecnología avanzada, transparencia y procesos de máxima calidad, convirtiéndonos en el aliado estratégico que potencia la rentabilidad y seguridad de su negocio.</p>
+                    </div>
+                    <div class="mv-box mt-4">
+                        <h3 class="text-gradient">Visión</h3>
+                        <p>Ser la firma líder en Venezuela en soluciones integrales de gestión y consultoría corporativa, reconocida por su innovación, excelencia operativa y alto nivel de profesionalismo.</p>
+                    </div>
+                </div>
+                <div class="valores-objetivos slide-in-right">
+                    <h3 class="text-gradient mb-2">Nuestros Valores</h3>
+                    <div class="valores-tags">
+                        <span class="tag">Compromiso</span>
+                        <span class="tag">Innovación</span>
+                        <span class="tag">Integridad</span>
+                        <span class="tag">Orientación al Logro</span>
+                        <span class="tag">Adaptabilidad</span>
+                        <span class="tag">Enfoque en el Cliente</span>
+                    </div>
+                    
+                    <h3 class="text-gradient mt-4 mb-2">Objetivos Estratégicos</h3>
+                    <ul class="objetivos-list">
+                        <li><i class="fas fa-check-circle"></i> Expansión y posicionamiento nacional en 4 años.</li>
+                        <li><i class="fas fa-check-circle"></i> Diseñar soluciones personalizadas que respondan a necesidades cambiantes.</li>
+                        <li><i class="fas fa-check-circle"></i> Alcanzar los más altos estándares de satisfacción y fidelización.</li>
+                        <li><i class="fas fa-check-circle"></i> Incorporar innovación tecnológica continua en nuestros servicios.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unidades de Negocio -->
+    <section id="unidades" class="section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Nuestras Unidades Especializadas</h2>
+                <p>De la Teoría a la Práctica. Entendemos que el ecosistema empresarial requiere soluciones adaptadas a cada etapa.</p>
+            </div>
+
+            <div class="unidades-diagram fade-in-up delay-1">
+                <div class="diagram-matriz">
+                    <h3>C-INNOVA CCS</h3>
+                    <span>Firma Consultora y Aliado Estratégico</span>
+                </div>
+                <div class="diagram-lines"></div>
+                <div class="grid-3 diagram-branches">
+                    
+                    <!-- ABC Empre -->
+                    <div class="unidad-card">
+                        <div class="unidad-header bg-accent-1">
+                            <h4>ABC Empre</h4>
+                            <span class="unidad-type">Desarrollo Empresarial</span>
+                        </div>
+                        <div class="unidad-body">
+                            <p class="unidad-target"><strong>Para:</strong> Negocios en Crecimiento (PyMEs, Emprendedores)</p>
+                            <p>Estructura y Crecimiento. Acompañamiento integral para convertir ideas en empresas estructuradas y financieramente sostenibles para escalar con éxito.</p>
+                        </div>
+                    </div>
+
+                    <!-- ABC TyF -->
+                    <div class="unidad-card">
+                        <div class="unidad-header bg-accent-2">
+                            <h4>ABC TyF</h4>
+                            <span class="unidad-type">Capacitación Profesional</span>
+                        </div>
+                        <div class="unidad-body">
+                            <p class="unidad-target"><strong>Para:</strong> Profesionales, Consultores e Independientes</p>
+                            <p>Formación de Especialistas. Programas de alta capacitación para actualizar y profundizar competencias en las áreas tributaria y financiera.</p>
+                            <a href="abc-tyf.html" style="display:inline-block; margin-top:1rem; color:var(--accent-teal); font-weight:600; text-decoration:none;">Ver Temario y Detalles &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- ABC EVA -->
+                    <div class="unidad-card">
+                        <div class="unidad-header bg-accent-3">
+                            <h4>ABC EVA</h4>
+                            <span class="unidad-type">Centro de Formación Digital</span>
+                        </div>
+                        <div class="unidad-body">
+                            <p class="unidad-target"><strong>Para:</strong> Comunidad Empresarial y Público General</p>
+                            <p>Plataforma de Conocimiento. Entorno Virtual de Aprendizaje para compartir herramientas, talleres, cursos y seminarios de actualización técnica.</p>
+                            <a href="abc-eva.html" style="display:inline-block; margin-top:1rem; color:var(--accent-purple); font-weight:600; text-decoration:none;">Ver Detalles y Requisitos &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Contacto -->
+    <section id="contacto" class="section cta-section text-center">
+        <div class="container fade-in-up">
+            <h2>Somos su mejor aliado, queremos escucharlo.</h2>
+            <p>Déjenos sus datos y un especialista se pondrá en contacto para impulsar el crecimiento de su empresa.</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>¿Qué unidad le interesa?</option>
+                        <option value="empre">ABC Empre (Emprendedores y PyMEs)</option>
+                        <option value="tyf">ABC TyF (Capacitación Profesional)</option>
+                        <option value="eva">ABC EVA (Entorno Virtual)</option>
+                        <option value="consultoria">Consultoría C-INNOVA General</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" placeholder="Cuéntenos sobre su necesidad o proyecto..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>C-INNOVA <span>CCS</span></h3>
+                <p>Aliados en la optimización y protección integral de tu negocio.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <a href="#nosotros">Sobre Nosotros</a>
+                <a href="#propuesta">Propuesta de Valor</a>
+                <a href="#unidades">Unidades de Negocio</a>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 C-INNOVA CCS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
