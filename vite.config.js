@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        empre: resolve(__dirname, 'abc-empre.html'),
         tyf: resolve(__dirname, 'abc-tyf.html'),
         eva: resolve(__dirname, 'abc-eva.html'),
       }

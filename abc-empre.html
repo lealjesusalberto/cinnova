@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ABC Empre - Desarrollo Empresarial. Acompañamiento integral para emprendedores y microempresarios.">
+    <title>ABC Empre | Desarrollo Empresarial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .empre-hero {
+            background: linear-gradient(135deg, rgba(109, 40, 217, 0.95) 0%, rgba(139, 92, 246, 0.8) 100%), url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            min-height: 50vh;
+        }
+        .empre-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-top: 4px solid var(--accent-purple);
+            height: 100%;
+        }
+        .modulo-card {
+            background: var(--surface-light);
+            border-left: 4px solid var(--accent-purple);
+            padding: 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+        .modulo-card h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .modulo-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .modulo-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .modulo-list li::before {
+            content: '\f105';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--accent-gold);
+            position: absolute;
+            left: 0;
+        }
+        .oferta-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: var(--transition);
+            border-top: 4px solid var(--accent-purple);
+            height: 100%;
+        }
+        .oferta-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        .oferta-icon {
+            font-size: 2.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            color: var(--accent-gold);
+            transform: translateX(-5px);
+        }
+        .propuesta-box {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 2rem;
+            border-radius: 15px;
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">C-INNOVA <span>CCS</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html#unidades">Volver a Unidades</a>
+                <a href="#contenido">Contenido</a>
+                <a href="#comenzar" class="btn-primary-outline">Comenzar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero empre-hero">
+        <div class="container hero-content" style="padding-top: 80px;">
+            <a href="index.html#unidades" class="back-link"><i class="fas fa-arrow-left"></i> Volver a C-INNOVA</a>
+            <h1 class="fade-in-up">ABC Empre</h1>
+            <p class="fade-in-up delay-1">Desarrollo Empresarial. Transformamos ideas y miedos en empresas sólidas, estructuradas y exitosas.</p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#contenido" class="btn-primary" style="background: var(--accent-purple);">Ver Programa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor y Dirigido a -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="slide-in-left">
+                    <h2 class="text-gradient" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-gold)); -webkit-background-clip: text;">Nuestra Propuesta de Valor</h2>
+                    <p class="mb-4">"Transformamos la parálisis financiera en control estratégico y paz mental."</p>
+                    <p class="mb-4">En ABC EMPRE no solo te enseñamos de números; te acompañamos a construir un negocio rentable y sostenible integrando técnica contable-tributaria con inteligencia emocional.</p>
+
+                    <h3 class="mt-4" style="color: var(--accent-purple);">Lo que nos hace únicos:</h3>
+                    <ul class="modulo-list mt-3">
+                        <li><strong>Finanzas Humanizadas:</strong> Explicamos la contabilidad y los impuestos en un lenguaje sencillo, claro y sin tecnicismos innecesarios.</li>
+                        <li><strong>Mente Sana, Negocio Sano:</strong> Te dotamos de herramientas de gestión emocional para superar el miedo al fracaso, controlar el estrés y tomar decisiones con firmeza.</li>
+                        <li><strong>Metodología 100% Práctica:</strong> Olvídate de la teoría abstracta. En cada sesión obtienes formatos, plantillas y planes de acción aplicables desde el primer día.</li>
+                        <li><strong>Blindaje y Crecimiento:</strong> Fortalecemos las áreas vitales de tu empresa para que operes con total seguridad legal y fiscal en Venezuela.</li>
+                    </ul>
+                </div>
+
+                <div class="slide-in-right">
+                    <div class="empre-card" style="background: var(--bg-dark); color: white;">
+                        <h3 class="text-gradient mb-3" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-gold)); -webkit-background-clip: text;">¿A Quién Va Dirigido?</h3>
+                        <p class="mb-3 text-secondary-dark">Nuestra propuesta está especialmente diseñada para acompañar a quienes buscan transformar el miedo a los números en control estratégico y crecimiento real:</p>
+                        <ul class="modulo-list" style="color: white;">
+                            <li><strong>Emprendedores con Ideas de Negocio:</strong> Personas con un proyecto en mente o en fase inicial que desean estructurar su modelo comercial sobre bases financieras, tributarias y legales sólidas desde el día uno.</li>
+                            <li><strong>Microempresarios y Dueños de PyMEs:</strong> Fundadores y dueños de pequeñas empresas que buscan ordenar su flujo de caja, optimizar su carga fiscal y adquirir herramientas de liderazgo emocional para tomar decisiones con tranquilidad.</li>
+                            <li><strong>Proyectistas e Innovadores:</strong> Creadores de soluciones o servicios que requieren validar la viabilidad económica de su propuesta y perderle el miedo a la gestión administrativa.</li>
+                            <li><strong>Líderes y Fundadores en Crecimiento:</strong> Líderes de negocio que experimentan parálisis por análisis, sobrecarga o estrés financiero y necesitan herramientas prácticas para gestionar la incertidumbre del entorno.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores -->
+    <section class="section bg-dark text-white">
+        <div class="container">
+            <div class="grid-2">
+                <div class="mv-box slide-in-left">
+                    <h3 class="text-gradient" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-gold)); -webkit-background-clip: text;">Misión</h3>
+                    <p>Empoderar a emprendedores y microempresarios a través de una formación integral que fusiona la maestría financiera y tributaria con el desarrollo de la inteligencia emocional. Transformamos ideas y miedos en empresas sólidas, estructuradas y exitosas, brindando las herramientas prácticas necesarias para liderar con confianza y propósito.</p>
+                    <p class="mt-3" style="font-size: 0.95rem; color: var(--text-secondary-dark);">Acompañamos a emprendedores y microempresarios a perderle el miedo a las finanzas y los tributos. Combinamos herramientas prácticas de gestión con el desarrollo de tu inteligencia emocional para que descubras tus fortalezas, tomes el control de tu negocio y transformes tus ideas en una empresa sólida, próspera y sin límites.</p>
+                </div>
+                <div class="mv-box slide-in-right">
+                    <h3 class="text-gradient" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-gold)); -webkit-background-clip: text;">Visión</h3>
+                    <p>Ser la plataforma de aprendizaje y mentoría líder para el ecosistema emprendedor, reconocida por humanizar las finanzas y los tributos. Aspiramos a ver un mercado lleno de empresas sostenibles y emocionalmente inteligentes que impulsen el desarrollo económico y social.</p>
+                    <p class="mt-3" style="font-size: 0.95rem; color: var(--text-secondary-dark);">Ser la comunidad y el espacio de formación donde los emprendedores encuentran la confianza, la claridad financiera y la fuerza emocional para construir negocios reales que transformen sus vidas y el mundo a su alrededor.</p>
+                </div>
+            </div>
+
+            <!-- Valores Corporativos -->
+            <div class="grid-2 mt-4 fade-in-up delay-1">
+                <div>
+                    <h3 class="mb-3 mt-4" style="color: var(--accent-purple);">Valores Corporativos</h3>
+                    <ul class="modulo-list" style="color: var(--text-primary-dark);">
+                        <li><strong>Empatía Real:</strong> Comprendemos perfectamente el reto de empezar desde cero y convivir con la incertidumbre. Enseñamos sin juzgar, respetando tu ritmo y caminando a tu lado en cada etapa del proceso.</li>
+                        <li><strong>Claridad sin Enredos:</strong> Olvídate de tecnicismos incomprensibles. Traducimos el lenguaje financiero, contable y tributario a un formato sencillo, transparente y 100% útil para tu día a día.</li>
+                        <li><strong>Fortaleza Interior:</strong> Estamos convencidos de que para tener un negocio sano se necesita una mente tranquila. Te brindamos herramientas para gestionar el estrés, la frustración y potenciar tu confianza como líder.</li>
+                        <li><strong>Acción de Verdad:</strong> Nos alejamos de la teoría abstracta. Cada taller y mentoría te entrega metodologías, plantillas y pasos claros para aplicar y ver resultados en tu negocio desde el primer día.</li>
+                        <li><strong>Construimos desde Adentro:</strong> Porque la mente del fundador es el activo más importante del negocio.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-3 mt-4" style="color: var(--accent-purple);">Valores Estratégicos</h3>
+                    <ul class="modulo-list" style="color: var(--text-primary-dark);">
+                        <li><strong>Integración Socioemocional y Financiera:</strong> Fusionamos la precisión de la técnica tributaria y contable con el desarrollo de la inteligencia emocional, transformando la ansiedad operativa en claridad gerencial para la toma de decisiones.</li>
+                        <li><strong>Pragmatismo de Alto Impacto:</strong> Priorizamos la aplicabilidad sobre la teoría abstracta. Diseñamos herramientas, plantillas y protocolos simplificados diseñados para ejecutarse y generar valor desde el primer día.</li>
+                        <li><strong>Sostenibilidad y Blindaje Corporativo:</strong> Promovemos la construcción de estructuras financieras sólidas y el cumplimiento fiscal riguroso, garantizando la longevidad del negocio y la protección del capital del emprendedor.</li>
+                        <li><strong>Acompañamiento Adaptativo:</strong> Ofrecemos mentoría personalizada que respeta la etapa, el ritmo y la realidad de cada proyecto, consolidando una relación de confianza duradera basada en el respeto y el rigor profesional.</li>
+                        <li><strong>Agilidad y Superación de la Parálisis:</strong> Fomentamos una mentalidad resolutiva que mitiga la parálisis por análisis, permitiendo a los fundadores estructurar, escalar y adaptar sus empresas con agilidad ante los cambios del entorno.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Académica -->
+    <section id="contenido" class="section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Oferta Académica y Formativa</h2>
+                <p>Nuestra oferta educativa está diseñada para fusionar la práctica técnica con el desarrollo personal, ofreciendo soluciones formativas adaptadas a la disponibilidad y ritmo de cada emprendedor.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="oferta-card fade-in-up delay-1">
+                    <i class="fas fa-tools oferta-icon"></i>
+                    <h4>Talleres Prácticos (Workshops Intensivos)</h4>
+                    <p class="text-secondary-light" style="font-size: 0.95rem;">Sesiones concentradas y prácticas enfocadas en resolver problemas específicos de tu negocio. Metodologías, plantillas y pasos claros para aplicar desde el primer día.</p>
+                </div>
+
+                <div class="oferta-card fade-in-up delay-2">
+                    <i class="fas fa-graduation-cap oferta-icon"></i>
+                    <h4>Programas Formativos y Mentorías</h4>
+                    <p class="text-secondary-light" style="font-size: 0.95rem;">Acompañamiento personalizado y continuo para guiar tu emprendimiento desde la estructuración hasta el crecimiento. Integración de finanzas, tributos e inteligencia emocional.</p>
+                </div>
+
+                <div class="oferta-card fade-in-up delay-3">
+                    <i class="fas fa-microphone-alt oferta-icon"></i>
+                    <h4>Seminarios, Masterclasses y Webinares</h4>
+                    <p class="text-secondary-light" style="font-size: 0.95rem;">Eventos de actualización y conocimiento sobre temas clave: fiscalidad, gestión financiera, liderazgo emocional y tendencias del ecosistema emprendedor.</p>
+                </div>
+
+                <div class="oferta-card fade-in-up delay-4">
+                    <i class="fas fa-building oferta-icon"></i>
+                    <h4>Programas In-Company y A Medida</h4>
+                    <p class="text-secondary-light" style="font-size: 0.95rem;">Soluciones formativas diseñadas exclusivamente para equipos de trabajo y organizaciones que buscan fortalecer sus competencias financieras, tributarias y de liderazgo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Comenzar -->
+    <section id="comenzar" class="section bg-dark text-white">
+        <div class="container">
+            <div class="grid-2">
+                <div class="slide-in-left">
+                    <h2 class="text-gradient" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-gold)); -webkit-background-clip: text;">Cómo Comenzar</h2>
+
+                    <div class="mt-4">
+                        <h4 style="color: var(--accent-purple);">Paso 1: Reserva tu Lugar</h4>
+                        <p class="text-secondary-dark">Elige el programa o mentoría que mejor se adapte a tu etapa y objetivos de negocio.</p>
+
+                        <h4 class="mt-3" style="color: var(--accent-purple);">Paso 2: Diagnóstico Inicial</h4>
+                        <ul class="modulo-list">
+                            <li><strong>Evaluación:</strong> Realizamos una sesión de diagnóstico para identificar tus necesidades financieras, tributarias y emocionales.</li>
+                            <li><strong>Plan Personalizado:</strong> Diseñamos una hoja de ruta adaptada a tu realidad y ritmo de negocio.</li>
+                        </ul>
+
+                        <h4 class="mt-3" style="color: var(--accent-purple);">Paso 3: Acompañamiento y Resultados</h4>
+                        <p class="text-secondary-dark">Accedes a herramientas prácticas, plantillas, mentorías personalizadas y una comunidad de apoyo para construir tu empresa sólida y sostenible.</p>
+                    </div>
+                </div>
+
+                <div class="slide-in-right">
+                    <div class="propuesta-box">
+                        <h3 class="mb-3 text-center" style="color: var(--accent-gold);">Metodología ABC Empre</h3>
+                        <p class="text-center mb-4" style="font-size: 0.9rem;">Integramos dos dimensiones esenciales para el éxito de tu negocio:</p>
+
+                        <div class="question">
+                            <p><strong><i class="fas fa-calculator" style="color: var(--accent-purple); margin-right: 0.5rem;"></i>Dimensión Financiera y Tributaria</strong></p>
+                            <ul class="options">
+                                <li>Gestión de flujo de caja y presupuestos</li>
+                                <li>Cumplimiento fiscal y tributario simplificado</li>
+                                <li>Estructuración contable desde el día uno</li>
+                                <li>Blindaje legal y protección del capital</li>
+                            </ul>
+                        </div>
+
+                        <div class="question">
+                            <p><strong><i class="fas fa-brain" style="color: var(--accent-gold); margin-right: 0.5rem;"></i>Dimensión Emocional y de Liderazgo</strong></p>
+                            <ul class="options">
+                                <li>Gestión del estrés y la incertidumbre</li>
+                                <li>Superación del miedo al fracaso y a los números</li>
+                                <li>Desarrollo de confianza como líder empresarial</li>
+                                <li>Herramientas de toma de decisiones con claridad</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <p style="color: var(--accent-purple); font-size: 0.9rem;">"Mente sana, negocio sano"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 fade-in-up delay-2">
+                <a href="index.html#contacto" class="btn-primary" style="background: var(--accent-gold); color: var(--bg-dark);">Comenzar mi Registro</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom" style="border:none; padding-top:0;">
+            <p>&copy; 2024 C-INNOVA CCS | ABC Empre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
